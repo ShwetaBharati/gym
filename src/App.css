@@ -319,8 +319,31 @@ code {
 .service-title {
   margin-top: 1.5rem;
   font-size: 1.25rem;
-  color: #7a2a14; /* similar to screenshot text color */
+  color: #7a2a14; 
   font-weight: 500;
   font-family: "Montserrat", Arial, sans-serif;
+}
+
+/* About Section Styles */
+.about-wrapper {
+  padding: 4rem 1.5rem;
+  background-color: #f7f5f1; 
+}
+
+.about-heading {
+  text-align: center;          
+  font-size: 2.3rem;
+  color: #8a2d1b;            
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.about-text {
+  max-width: 900px;            
+  margin: 0 auto;              
+  text-align: center;         
+  line-height: 1.6;
+  font-size: 1.05rem;
+  color: #555555;
 }
 
