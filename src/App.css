@@ -293,6 +293,12 @@ code {
 
 .service-card {
   text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
 }
 
 .service-image-wrapper {

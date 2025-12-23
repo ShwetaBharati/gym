@@ -1,27 +1,31 @@
-// src/components/ServicesSection.jsx
 import React from "react";
-import "./../App.css"; // adjust path if needed
+import "./../App.css"; 
+import image1 from "../images/services-02.jpg";
+import image2 from "../images/services-3.jpg";
+import image3 from "../images/services-1.avif";
+import image4 from "../images/services-4.webp";
 
+// services image data array
 const servicesData = [
   {
     id: 1,
     title: "Physical Therapy",
-    img: "/images/physical.jpg", // put your image in public/images
+     img: image1,
   },
   {
     id: 2,
     title: "Occupational Therapy",
-    img: "/images/occupational.jpg",
+    img: image2,
   },
   {
     id: 3,
     title: "Speech Therapy",
-    img: "/images/speech.jpg",
+    img: image3,
   },
   {
     id: 4,
     title: "Group Classes",
-    img: "/images/group.jpg",
+    img: image4,
   },
 ];
 
