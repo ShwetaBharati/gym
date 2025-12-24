@@ -347,3 +347,16 @@ code {
   color: #555555;
 }
 
+/* Services Notes Section Styles */
+.services-note-wrapper {
+  padding: 1.5rem 1rem;
+  background-color: #ffffff;
+}
+
+.services-note-text {
+  text-align: center;     
+  font-size: 0.95rem;
+  color: #666666;
+  font-weight: 500;
+}
+
