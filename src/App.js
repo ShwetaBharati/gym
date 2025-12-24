@@ -6,6 +6,7 @@ import ServicesSection from './components/ServicesSection';
 import AboutSection from './components/AboutSection';
 import ServicesNote from './components/ServicesNote';
 import ContactCTA from './components/ContactCTA';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <AboutSection />
       <ServicesNote />
       <ContactCTA />
+      <Footer />
     </div>
   );
 }

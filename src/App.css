@@ -362,12 +362,12 @@ code {
 
 /*Contact Section Styles */
 .contact-cta-wrapper {
-  background-color: #8b301d;         /* dark brick red like screenshot */
+  background-color: #8b301d;        
   padding: 4rem 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;               /* center horizontally */
-  justify-content: center;           /* center vertically within padding */
+  align-items: center;               
+  justify-content: center;          
   text-align: center;
 }
 
@@ -395,4 +395,118 @@ code {
   color: #8b301d;
 }
 
+/* Footer Styles */
+.site-footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4rem 2rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 2rem;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer-subheading {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-description {
+  color: #aaa;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.footer-nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav-list li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav-list a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav-list a:hover {
+  color: #fff;
+  padding-left: 5px;
+}
+
+.footer-contact-info {
+  color: #aaa;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  color: #666;
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #0056b3;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.footer-back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.footer-back-to-top:hover {
+  background: #004494;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
