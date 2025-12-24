@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import ServicesSection from './components/ServicesSection';
 import AboutSection from './components/AboutSection';
 import ServicesNote from './components/ServicesNote';
+import ContactCTA from './components/ContactCTA';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ServicesSection />
       <AboutSection />
       <ServicesNote />
+      <ContactCTA />
     </div>
   );
 }

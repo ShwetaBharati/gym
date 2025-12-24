@@ -360,3 +360,39 @@ code {
   font-weight: 500;
 }
 
+/*Contact Section Styles */
+.contact-cta-wrapper {
+  background-color: #8b301d;         /* dark brick red like screenshot */
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;               /* center horizontally */
+  justify-content: center;           /* center vertically within padding */
+  text-align: center;
+}
+
+.contact-cta-heading {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.contact-cta-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 0.75rem 2.5rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.contact-cta-button:hover {
+  background-color: #ffffff;
+  color: #8b301d;
+}
+
+
