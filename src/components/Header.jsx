@@ -23,7 +23,7 @@ function Header() {
           <li><a href="#intensive-therapy">Intensive Therapy</a></li>
           <li><a href="#food-school">Food School</a></li>
           <li><a href="#sensory-bus">Sensory Bus</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
     </header>
