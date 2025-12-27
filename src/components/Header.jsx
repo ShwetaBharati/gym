@@ -1,20 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 
 function Header() {
   return (
     <header className="App-header">
-      <div className="logo-container">
+      <Link to="/" className="logo-container">
         <div className="logo-box">
           <span className="logo-text-small">WE</span>
           <span className="logo-text-large">HOPE</span>
           <span className="logo-text-small">THERAPY</span>
           <span className="logo-subtext">Pediatric Therapy & Play Gym</span>
         </div>
-      </div>
+      </Link>
       <nav className="main-nav">
         <ul>
-          <li><a href="#home">Home</a></li>
+          <li><Link to="/">Home</Link></li>
           <li><a href="#about">About</a></li>
           <li><a href="#faq">FAQ's</a></li>
           <li><a href="#careers">Careers</a></li>
@@ -23,7 +24,7 @@ function Header() {
           <li><a href="#intensive-therapy">Intensive Therapy</a></li>
           <li><a href="#food-school">Food School</a></li>
           <li><a href="#sensory-bus">Sensory Bus</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
     </header>
