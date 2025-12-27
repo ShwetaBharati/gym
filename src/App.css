@@ -510,3 +510,20 @@ code {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0,0,0,0.4);
 }
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #fff;
+}
+
