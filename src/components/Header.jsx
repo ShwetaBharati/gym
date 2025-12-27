@@ -16,7 +16,7 @@ function Header() {
       <nav className="main-nav">
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><a href="#about">About</a></li>
+          <li><Link to="/about">About</Link></li>
           <li><a href="#faq">FAQ's</a></li>
           <li><a href="#careers">Careers</a></li>
           <li><a href="#services">Services</a></li>

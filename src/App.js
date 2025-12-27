@@ -9,6 +9,7 @@ import ServicesNote from './components/ServicesNote';
 import ContactCTA from './components/ContactCTA';
 import Footer from './components/Footer';
 import ContactPage from "./components/pages/ContactPage";
+import AboutPage from "./components/pages/AboutPage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
                 <ContactCTA />
               </>
             } />
+            <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
