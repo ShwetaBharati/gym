@@ -8,7 +8,7 @@ import AboutSection from './components/AboutSection';
 import ServicesNote from './components/ServicesNote';
 import ContactCTA from './components/ContactCTA';
 import Footer from './components/Footer';
-import ContactPage from "./components/ContactPage";
+import ContactPage from "./components/pages/ContactPage";
 
 function App() {
   return (
