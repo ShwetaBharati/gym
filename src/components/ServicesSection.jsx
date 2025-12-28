@@ -11,21 +11,25 @@ const servicesData = [
     id: 1,
     title: "Physical Therapy",
      img: image1,
+     link: "/services",
   },
   {
     id: 2,
     title: "Occupational Therapy",
     img: image2,
+    link: "/services",
   },
   {
     id: 3,
     title: "Speech Therapy",
     img: image3,
+    link: "/services",
   },
   {
     id: 4,
     title: "Group Classes",
     img: image4,
+    link: "/services",
   },
 ];
 
@@ -35,13 +39,13 @@ const ServicesSection = () => {
       {servicesData.map((service) => (
         <div key={service.id} className="service-card">
           <div className="service-image-wrapper">
-            <img
+            <img href={service.link}
               src={service.img}
               alt={service.title}
               className="service-image"
             />
           </div>
-          <p className="service-title">{service.title}</p>
+          <a href={service.link} className="service-title">{service.title}</a>
         </div>
       ))}
     </section>

@@ -37,10 +37,10 @@ const Footer = () => {
         <div className="footer-section">
           <h4 className="footer-subheading">Quick Links</h4>
           <ul className="footer-nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
 
@@ -73,7 +73,7 @@ const Footer = () => {
           onClick={scrollToTop} 
           className={`footer-back-to-top ${showButton ? 'show' : ''}`}
         >
-          Back to Top {'\u2191'}
+         {'\u2191'}
         </button>
       </div>
     </footer>

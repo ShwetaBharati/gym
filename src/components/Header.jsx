@@ -19,7 +19,7 @@ function Header() {
           <li><Link to="/about">About</Link></li>
           <li><a href="#faq">FAQ's</a></li>
           <li><a href="#careers">Careers</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><Link to="/services">Services</Link></li>
           <li><a href="#group-classes">Group Classes</a></li>
           <li><a href="#intensive-therapy">Intensive Therapy</a></li>
           <li><a href="#food-school">Food School</a></li>

@@ -10,6 +10,7 @@ import ContactCTA from './components/ContactCTA';
 import Footer from './components/Footer';
 import ContactPage from "./components/pages/ContactPage";
 import AboutPage from "./components/pages/AboutPage";
+import ServicesPage from "./components/pages/ServicesPage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               </>
             } />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
