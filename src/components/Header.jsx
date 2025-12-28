@@ -10,20 +10,18 @@ function Header() {
           <span className="logo-text-small">WE</span>
           <span className="logo-text-large">HOPE</span>
           <span className="logo-text-small">THERAPY</span>
-          <span className="logo-subtext">Pediatric Therapy & Play Gym</span>
+          <span className="logo-subtext">Pediatric Therapy </span>
         </div>
       </Link>
       <nav className="main-nav">
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
-          <li><a href="#faq">FAQ's</a></li>
-          <li><a href="#careers">Careers</a></li>
           <li><Link to="/services">Services</Link></li>
-          <li><a href="#group-classes">Group Classes</a></li>
-          <li><a href="#intensive-therapy">Intensive Therapy</a></li>
-          <li><a href="#food-school">Food School</a></li>
-          <li><a href="#sensory-bus">Sensory Bus</a></li>
+          <li><a href="gallery">Gallery</a></li>
+          <li><a href="/physical-therapy">Physical Therapy</a></li>
+          <li><a href="/evaluation">Evaluation</a></li>
+          <li><a href="/reviews">Reviews</a></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>

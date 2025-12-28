@@ -104,7 +104,7 @@ function Hero() {
             ></span>
           ))}
         </div>
-        <button className="cta-button">Find Out More</button>
+        <button href="/services" className="cta-button">Find Out More</button>
       </div>
 
       <button className="arrow-btn right-arrow" onClick={nextSlide}>

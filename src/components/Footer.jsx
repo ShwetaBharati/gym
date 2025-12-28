@@ -41,6 +41,8 @@ const Footer = () => {
             <li><a href="/about">About Us</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/faq">FAQ</a></li>
           </ul>
         </div>
 
@@ -68,7 +70,7 @@ const Footer = () => {
       </div>
       
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} We Hope Therapy & Play Gym. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} We Hope Play Therapy. All rights reserved.</p>
         <button 
           onClick={scrollToTop} 
           className={`footer-back-to-top ${showButton ? 'show' : ''}`}
