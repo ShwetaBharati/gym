@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import ContactPage from "./components/pages/ContactPage";
 import AboutPage from "./components/pages/AboutPage";
 import ServicesPage from "./components/pages/ServicesPage";
+import GalleryPage from "./components/pages/GalleryPage";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             } />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
