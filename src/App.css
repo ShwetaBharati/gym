@@ -194,10 +194,6 @@ code {
   animation: fadeIn 1s ease-in-out;
 }
 
-.hero-content button:hover {
-  color: var(--primary-color);
-}
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -230,13 +226,14 @@ code {
   padding: 10px 30px;
   font-size: 1rem;
   text-transform: uppercase;
+  text-decoration: none;
   cursor: pointer;
   transition: background 0.3s, color 0.3s;
 }
 
 .cta-button:hover {
   background: var(--white);
-  color: var(--black);
+  color: var(--primary-color);
 }
 
 /* Arrow Buttons */
@@ -315,9 +312,9 @@ code {
 }
 
 .service-image-wrapper {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
+  width: 450px;
+  height: 280px;
+  border-radius: 10px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -409,6 +406,7 @@ code {
   font-size: 1rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+  text-decoration: none;
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -480,8 +478,8 @@ code {
 }
 
 .footer-nav-list a:hover {
-  color: var(--white);
-  padding-left: 5px;
+  color: var(--primary-color);
+  padding-left: 2px;
 }
 
 .footer-contact-info {
@@ -493,12 +491,17 @@ code {
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
-  color: #666;
+  color: var(--footer-text);
   font-size: 0.85rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+.footer-year {
+  color: var(--primary-color);
+  font-weight: 600;
 }
 
 .footer-back-to-top {
@@ -846,6 +849,4 @@ code {
     flex: none;
   }
 }
-
-
 

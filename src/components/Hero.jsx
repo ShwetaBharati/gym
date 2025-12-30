@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
+import { Link } from 'react-router-dom';
+import image1 from '../images/scroller-01.jpeg';
+import image2 from '../images/scroller-03.jpg';
+import image3 from '../images/scroller-04.avif';
+import image4 from '../images/scroller-05.avif';
 
 function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -10,20 +15,24 @@ function Hero() {
   // slider images and titles
   const slides = [
     {
-      image: 'https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-      title: 'Achieving Milestones'
+      title: 'Achieving Milestones',
+      img: image1,
+      // image: 'https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'
     },
     {
-      image: 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-      title: 'Growing Together'
+      title: 'Growing Together',
+      img: image2,
+      // image: 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'
     },
     {
-      image: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-      title: 'Play & Learn'
+      title: 'Play & Learn',
+      img: image3,
+      // image: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'
     },
     {
-      image: 'https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-      title: 'Therapy & Fun'
+      title: 'Therapy & Fun',
+      img: image4,
+      // image: 'https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'
     }
   ];
 
@@ -83,7 +92,7 @@ function Hero() {
         <div
           key={index}
           className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
-          style={{ backgroundImage: `url(${slide.image})` }}
+          style={{ backgroundImage: `url(${slide.img})` }}
         ></div>
       ))}
 
@@ -104,7 +113,7 @@ function Hero() {
             ></span>
           ))}
         </div>
-        <button href="/services" className="cta-button">Find Out More</button>
+        <Link to="/services" className="cta-button">Find Out More</Link>
       </div>
 
       <button className="arrow-btn right-arrow" onClick={nextSlide}>
