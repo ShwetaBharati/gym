@@ -13,6 +13,7 @@ import AboutPage from "./components/pages/AboutPage";
 import ServicesPage from "./components/pages/ServicesPage";
 import GalleryPage from "./components/pages/GalleryPage";
 import PhysicalTherapyPage from "./components/pages/PhysicalTherapyPage";
+import EvaluationPage from "./components/pages/EvaluationPage";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/physical-therapy" element={<PhysicalTherapyPage />} />
+            <Route path="/evaluation" element={<EvaluationPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>

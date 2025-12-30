@@ -32,6 +32,36 @@ const PhysicalTherapyPage = () => {
         </div>
       </section>
 
+      {/* NEW: Our Therapy Process - evaluation jaisa design */}
+      <section className="pt-process">
+        <div className="pt-process-inner">
+          <h2>Our Therapy Process</h2>
+          
+          <div className="pt-process-grid">
+            <div className="pt-process-step">
+              <div className="pt-step-number">1</div>
+              <h3>Initial Assessment</h3>
+              <p>Comprehensive evaluation of current abilities</p>
+            </div>
+            <div className="pt-process-step">
+              <div className="pt-step-number">2</div>
+              <h3>Customized Plan</h3>
+              <p>Personalized therapy goals and exercises</p>
+            </div>
+            <div className="pt-process-step">
+              <div className="pt-step-number">3</div>
+              <h3>Active Sessions</h3>
+              <p>Fun, engaging therapy in our gym</p>
+            </div>
+            <div className="pt-process-step">
+              <div className="pt-step-number">4</div>
+              <h3>Progress Review</h3>
+              <p>Regular re-evaluations and adjustments</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* treatment areas */}
       <section className="pt-areas">
         <div className="pt-areas-inner">
