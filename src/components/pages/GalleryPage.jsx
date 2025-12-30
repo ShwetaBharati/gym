@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./../../App.css";
 import image1 from "../../images/services-01.webp";
 import image2 from "../../images/services-3.jpg";
@@ -55,6 +55,16 @@ const galleryImages = [
 ];
 
 const GalleryPage = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openLightbox = (image) => {
+    setSelectedImage(image);
+  };
+
+  const closeLightbox = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <div className="gallery-page">
       {/* top banner */}
@@ -78,12 +88,24 @@ const GalleryPage = () => {
       <section className="gallery-grid">
         <div className="gallery-grid-inner">
           {galleryImages.map((image) => (
-            <div key={image.id} className="gallery-item">
+            <div key={image.id} className="gallery-item" onClick={() => openLightbox(image)}>
               <img src={image.img} alt={image.alt} loading="lazy" />
             </div>
           ))}
         </div>
       </section>
+
+      {/* lightbox */}
+      {selectedImage && (
+        <div className="lightbox-overlay" onClick={closeLightbox}>
+          <div className="lightbox-content">
+            <img src={selectedImage.img} alt={selectedImage.alt} />
+            <button className="lightbox-close-btn" onClick={closeLightbox}>
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
