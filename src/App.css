@@ -826,10 +826,19 @@ code {
   object-fit: cover;
 }
 
+.service-row-text {
+  padding: 2rem 0;
+}
+
+.service-row-text a {
+  text-decoration: none;
+}
+
 .service-row-text h3 {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: var(--heading-color);
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
 .service-row-text p {
@@ -1100,19 +1109,18 @@ code {
 
 .pt-cta-button {
   display: inline-block;
-  background-color: var(--white);
-  color: var(--heading-color);
+  color: var(--white);
   padding: 1rem 2.5rem;
   text-decoration: none;
-  border-radius: 4px;
   font-weight: 600;
   font-size: 1.1rem;
+  border: 2px solid var(--white);
   transition: all 0.3s ease;
 }
 
 .pt-cta-button:hover {
-  background-color: var(--secondary-hover-color);
-  transform: translateY(-2px);
+  background-color: var(--white);
+  color: var(--primary-color);
 }
 
 /* responsive */
