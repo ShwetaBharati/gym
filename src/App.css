@@ -863,7 +863,7 @@ code {
 .gallery-hero {
   position: relative;
   height: 500px;
-  background-image: url("../src/images/banner-1.webp"); 
+  background-image: url("../src/images/scroller-04.avif"); 
   background-size: cover;
   background-position: center;
   display: flex;
@@ -989,8 +989,8 @@ code {
 /* top physical therapy banner */
 .pt-hero {
   position: relative;
-  height: 280px;
-  background-image: url("../src/images/banner-1.webp"); 
+  height: 500px;
+  background-image: url("../src/images/scroller-01.jpeg"); 
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1001,8 +1001,7 @@ code {
 .pt-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(122,42,25,0.8), rgba(139,48,29,0.9));
-}
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.1), rgba(90, 30, 10, 0.7));}
 
 .pt-hero-title {
   position: relative;
@@ -1201,8 +1200,8 @@ code {
 /* top evaluation banner */
 .eval-hero {
   position: relative;
-  height: 280px;
-  background-image: url("../src/images/banner-1.webp"); 
+  height: 500px;
+  background-image: url("../src/images/scroller-04.avif"); 
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1213,8 +1212,7 @@ code {
 .eval-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, var(--heading-color), var(--primary-hover-color));
-}
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.1), rgba(90, 30, 10, 0.7));}
 
 .eval-hero-title {
   position: relative;
