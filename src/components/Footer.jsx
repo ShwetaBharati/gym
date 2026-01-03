@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3 className="footer-heading">WE HOPE THERAPY</h3>
           <p className="footer-description">
-            Pediatric Therapy & Play Gym dedicated to helping children achieve their milestones in a fun and supportive environment.
+            Pediatric Therapy dedicated to helping children achieve their milestones in a fun and supportive environment.
           </p>
         </div>
 
@@ -41,6 +41,8 @@ const Footer = () => {
             <li><a href="/about">About Us</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/faq">FAQ</a></li>
           </ul>
         </div>
 
@@ -68,7 +70,7 @@ const Footer = () => {
       </div>
       
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} We Hope Therapy & Play Gym. All rights reserved.</p>
+        <p><span className="footer-year">&copy; {new Date().getFullYear()}</span> We Hope Play Therapy. All rights reserved.</p>
         <button 
           onClick={scrollToTop} 
           className={`footer-back-to-top ${showButton ? 'show' : ''}`}

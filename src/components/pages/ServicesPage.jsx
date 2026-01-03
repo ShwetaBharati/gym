@@ -1,9 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./../../App.css";
 import image1 from "../../images/services-02.jpg";
 import image2 from "../../images/services-3.jpg";
-import image3 from "../../images/services-1.avif";
-import image4 from "../../images/services-4.webp";
 
 // services image data array
 
@@ -17,25 +16,11 @@ const services = [
   },
   {
     id: 2,
-    title: "Occupational Therapy",
+    title: "Evaluation",
     img: image2,
     text:
-      "Occupational therapy supports independence with activities of daily living, fine‑motor skills, sensory processing, visual‑motor integration and school readiness."
+      "Evaluationtherapy supports independence with activities of daily living, fine‑motor skills, sensory processing, visual‑motor integration and school readiness."
   },
-  {
-    id: 3,
-    title: "Speech Therapy",
-    img: image3,
-    text:
-      "Speech therapy focuses on articulation, language development, social communication and feeding skills to help children communicate and participate more confidently."
-  },
-  {
-    id: 4,
-    title: "Group Classes",
-    img: image4,
-    text:
-      "Group Classes provide guidance on healthy eating habits, meal planning, and dietary needs to support overall growth and development."
-  }
 ];
 
 const ServicesPage = () => {
@@ -66,17 +51,22 @@ const ServicesPage = () => {
       {/* list of services: circle + text */}
       <section className="services-list">
         <div className="services-list-inner">
-          {services.map((service) => (
+          {services.map((service) => {
+            const slug = service.title.toLowerCase().replace(/\s+/g, '-');
+            const linkTo = service.id === 1 ? '/physical-therapy' : `/services/${slug}`;
+            return(
             <article key={service.id} className="service-row">
-              <div className="service-row-image">
+              <Link to={linkTo} className="service-row-image">
                 <img src={service.img} alt={service.title} />
-              </div>
+              </Link>
               <div className="service-row-text">
-                <h3>{service.title}</h3>
+                <Link to={linkTo}>
+                  <h3>{service.title}</h3>
+                </Link>
                 <p>{service.text}</p>
               </div>
             </article>
-          ))}
+          )})}
         </div>
       </section>
     </div>

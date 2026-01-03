@@ -2,8 +2,6 @@ import React from "react";
 import "./../App.css"; 
 import image1 from "../images/services-02.jpg";
 import image2 from "../images/services-3.jpg";
-import image3 from "../images/services-1.avif";
-import image4 from "../images/services-4.webp";
 
 // services image data array
 const servicesData = [
@@ -15,20 +13,8 @@ const servicesData = [
   },
   {
     id: 2,
-    title: "Occupational Therapy",
+    title: "Evaluation",
     img: image2,
-    link: "/services",
-  },
-  {
-    id: 3,
-    title: "Speech Therapy",
-    img: image3,
-    link: "/services",
-  },
-  {
-    id: 4,
-    title: "Group Classes",
-    img: image4,
     link: "/services",
   },
 ];
