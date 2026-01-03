@@ -56,7 +56,6 @@ const reviews = [
 const ReviewsPage = () => {
   return (
     <div className="reviews-page">
-
       {/* top banner */}
       <section className="reviews-hero">
         <div className="reviews-hero-overlay" />
@@ -74,26 +73,23 @@ const ReviewsPage = () => {
         </div>
       </section>
 
-      {/* reviews grid - ServicesPage jaisa clickable */}
+      {/* reviews grid */}
       <section className="reviews-grid">
         <div className="reviews-grid-inner">
           {reviews.map((review) => (
-            <article key={review.id} className="review-row">
-              <Link to="/services" className="review-row-image">
-                <img src={review.avatar} alt={review.name} />
-              </Link>
-              <div className="review-row-text">
-                <div className="review-header">
+            <article key={review.id} className="review-card">
+              <div className="review-header">
+                <img src={review.avatar} alt={review.name} className="review-avatar" />
+                <div>
+                  <h3 className="review-name">{review.name}</h3>
                   <div className="review-stars">
                     {[...Array(review.rating)].map((_, i) => (
-                      <span key={i} className="star">★</span>
+                      <span key={i}>★</span>
                     ))}
                   </div>
-                  <h3>{review.name}</h3>
                 </div>
-                <p className="review-quote">"{review.quote}"</p>
-                <Link to="/services" className="review-link">Read More →</Link>
               </div>
+              <p className="review-quote">{review.quote}</p>
             </article>
           ))}
         </div>
